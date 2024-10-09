@@ -117,7 +117,7 @@ addEventListener("fetch", async event => {
                 return new Response(responseBody, responseInit);
 
             } else {
-                const responseHeaders = setupCORSHeaders(new Headers(response.headers));
+                const responseHeaders = setupCORSHeaders(new Headers());
 
                 let country = false;
                 let colo = false;
